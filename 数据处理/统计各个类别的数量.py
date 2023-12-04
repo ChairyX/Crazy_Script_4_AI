@@ -1,10 +1,10 @@
-# 统计类别数量
+# 统计DOTA格式中类别instance
 import os
 import random
 import numpy as np
 from numpy import *
 
-txt_filepath = r"----"  # 原始txt文件所存文件夹，文件夹可以有一个或多个txt文件
+txt_filepath = r"-------"  # 原始txt文件所存文件夹，文件夹可以有一个或多个txt文件
 
 total_txt = os.listdir(txt_filepath)  # 返回指定的文件夹包含的文件或文件夹的名字的列表
 num = len(total_txt)
@@ -21,7 +21,7 @@ for i in txt_list:  # 遍历每一个文件
     for j in range(len(f_line)):
         line_list = f_line[j].strip().split(' ')
         class_name = line_list[8]
-        if class_name == 'plane':
+        if class_name == 'plane':  # 要统计的类别名
             plane_num += 1
         if class_name == 'vehicle':
             vehicle_num += 1
