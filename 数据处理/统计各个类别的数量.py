@@ -4,7 +4,7 @@ import random
 import numpy as np
 from numpy import *
 
-txt_filepath = r"F:\shujuji\DataSets_pro\DataSets_OBB\UCAS_AOD\labels"  # 原始txt文件所存文件夹，文件夹可以有一个或多个txt文件
+txt_filepath = r"----"  # 原始txt文件所存文件夹，文件夹可以有一个或多个txt文件
 
 total_txt = os.listdir(txt_filepath)  # 返回指定的文件夹包含的文件或文件夹的名字的列表
 num = len(total_txt)
